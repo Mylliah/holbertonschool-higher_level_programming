@@ -32,6 +32,10 @@ TypeError: text must be a string
 Traceback (most recent call last):
 TypeError: text_indentation() missing 1 required positional argument: 'text'
 
+>>> text_indentation("Holberton ")
+Holberton
+<BLANKLINE>
+
 >>> text_indentation("Hello. World? Yes: No.")
 Hello.
 <BLANKLINE>
@@ -50,10 +54,15 @@ Yes:
 <BLANKLINE>
 No.
 
+>>> text_indentation("     Hello.       ")
+Hello.
+<BLANKLINE>
+
 >>> text_indentation("No punctuation here")
 No punctuation here
 
 >>> text_indentation("")
+>>> text_indentation("     ")
 >>> text_indentation("...??::")
 .
 <BLANKLINE>
@@ -177,3 +186,20 @@ B.
 C.
 <BLANKLINE>
 D.
+
+>>> text_indentation("   Holberton!... hello.\n   world!   ")
+Hey!.
+<BLANKLINE>
+.
+<BLANKLINE>
+.
+<BLANKLINE>
+hello.
+<BLANKLINE>
+<BLANKLINE>
+world!
+
+>>> text_indentation("Holberton: !")
+Hello:
+<BLANKLINE>
+!
