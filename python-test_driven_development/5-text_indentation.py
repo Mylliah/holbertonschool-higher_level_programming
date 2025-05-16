@@ -5,35 +5,33 @@ each of these characters: ., ? and :.
 """
 
 
-def text_indentation(text):
+def text_indentation(txt):
     """
     Prints a text with 2 new lines after each of these characters: ., ? and :
 
     Args:
-        text (str): The text to print.
+        txt (str): The text to print.
 
     Raises:
-        TypeError: If text is not a string.
+        TypeError: If txt is not a string.
     """
-    if not isinstance(text, str):
+    if type(txt) is not str:
         raise TypeError("text must be a string")
 
-    start = 0
-    length = len(text)
-    i = 0
-    while i < length:
-        while start < length and text[start] == " ":
-            start += 1
-        i = start
-        while i < length and text[i] not in ".:?":
-            i += 1
-        if start < length:
-            if i < length:
-                print(text[start:i + 1].strip())
-                print()
-                start = i + 1
-                i = start
-            else:
-                if text[start:].strip():
-                    print(text[start:].strip())
-                break
+    segment = ""
+    for char in txt:
+        if char in ('.', '?', ':'):
+            segment += char
+            print(segment.strip())
+            print()
+            segment = ""
+        elif char == '\n':
+            if segment.strip():
+                print(segment.strip())
+            print()
+            segment = ""
+        else:
+            segment += char
+
+    if segment.strip():
+        print(segment.strip(), end="")
