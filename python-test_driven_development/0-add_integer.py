@@ -3,7 +3,11 @@
 This module provides a function that adds two integers.
 
 It handles both integers and floats, casting floats to integers.
+This is useful for ensuring integer addition in mixed-type scenarios.
+The function raises a TypeError if the arguments are not numbers.
+No external modules are required.
 """
+
 
 def add_integer(a, b=98):
     """
@@ -24,4 +28,3 @@ def add_integer(a, b=98):
     if not isinstance(b, (int, float)):
         raise TypeError("b must be an integer")
     return int(a) + int(b)
-
