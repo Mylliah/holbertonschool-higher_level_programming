@@ -64,3 +64,11 @@ TypeError: div must be a number
 >>> matrix_divided([[1, 2], [3, 4]], [2])
 Traceback (most recent call last):
 TypeError: div must be a number
+
+>>> matrix_divided([[1, 2], None], 2)
+Traceback (most recent call last):
+TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+>>> matrix_divided([[1, 2], [3, 4]], True)
+Traceback (most recent call last):
+TypeError: div must be a number
