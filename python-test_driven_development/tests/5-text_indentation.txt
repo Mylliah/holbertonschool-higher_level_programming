@@ -136,6 +136,7 @@ C.
 D.
 
 >>> text_indentation("   ")
+
 >>> text_indentation(".")
 .
 >>> text_indentation("   .   ")
@@ -187,7 +188,7 @@ C.
 <BLANKLINE>
 D.
 
->>> text_indentation("   Holberton!... hello.\n   world!   ")
+>>> text_indentation("   Hey!... hello.\n   world!   ")
 Hey!.
 <BLANKLINE>
 .
@@ -199,7 +200,7 @@ hello.
 <BLANKLINE>
 world!
 
->>> text_indentation("Holberton: !")
+>>> text_indentation("Hello: !")
 Hello:
 <BLANKLINE>
 !
