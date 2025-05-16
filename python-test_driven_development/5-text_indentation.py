@@ -18,27 +18,20 @@ def text_indentation(txt):
     if type(txt) is not str:
         raise TypeError("text must be a string")
 
-    text = text.strip()
-    
-    i = 0
-    length = len(text)
-    while i < length:
+    segment = ""
+    for char in txt:
+        if char in ('.', '?', ':'):
+            segment += char
+            print(segment.strip())
+            print()
+            segment = ""
+        elif char == '\n':
+            if segment.strip():
+                print(segment.strip())
+            print()
+            segment = ""
+        else:
+            segment += char
 
-        start = i
-
-        while i < length and text[i] not in ['.', '?', ':']:
-            i += 1
-
-        line = text[start:i].strip()
-        if line:
-            print(line)
-
-        if i == length:
-            break
-        
-        print(text[i])
-        print()
-        
-        i += 1
-        while i < length and text[i] == ' ':
-            i += 1
+    if segment.strip():
+        print(segment.strip(), end="")
