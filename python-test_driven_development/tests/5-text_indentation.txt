@@ -1,4 +1,37 @@
 >>> text_indentation = __import__('5-text_indentation').text_indentation
+
+>>> text_indentation(123)
+Traceback (most recent call last):
+TypeError: text must be a string
+
+>>> text_indentation(123.456)
+Traceback (most recent call last):
+TypeError: text must be a string
+
+>>> text_indentation(float("inf"))
+Traceback (most recent call last):
+TypeError: text must be a string
+
+>>> text_indentation(float("NaN"))
+Traceback (most recent call last):
+TypeError: text must be a string
+
+>>> text_indentation((1, 2, 3))
+Traceback (most recent call last):
+TypeError: text must be a string
+
+>>> text_indentation([1, 2, 3])
+Traceback (most recent call last):
+TypeError: text must be a string
+
+>>> text_indentation(None)
+Traceback (most recent call last):
+TypeError: text must be a string
+
+>>> text_indentation()
+Traceback (most recent call last):
+TypeError: text_indentation() missing 1 required positional argument: 'text'
+
 >>> text_indentation("Hello. World? Yes: No.")
 Hello.
 <BLANKLINE>
@@ -7,6 +40,7 @@ World?
 Yes:
 <BLANKLINE>
 No.
+
 >>> text_indentation("   Hello.   World?   Yes:   No.   ")
 Hello.
 <BLANKLINE>
@@ -15,8 +49,10 @@ World?
 Yes:
 <BLANKLINE>
 No.
+
 >>> text_indentation("No punctuation here")
 No punctuation here
+
 >>> text_indentation("")
 >>> text_indentation("...??::")
 .
@@ -32,6 +68,7 @@ No punctuation here
 :
 <BLANKLINE>
 :
+
 >>> text_indentation("A.B?C:D")
 A.
 <BLANKLINE>
@@ -40,6 +77,7 @@ B?
 C:
 <BLANKLINE>
 D
+
 >>> text_indentation("   A.   B?   C:   D   ")
 A.
 <BLANKLINE>
@@ -48,6 +86,7 @@ B?
 C:
 <BLANKLINE>
 D
+
 >>> text_indentation("A . B ? C : D")
 A .
 <BLANKLINE>
@@ -56,6 +95,7 @@ B ?
 C :
 <BLANKLINE>
 D
+
 >>> text_indentation("A...B???C:::D")
 A.
 <BLANKLINE>
@@ -76,6 +116,7 @@ C:
 :
 <BLANKLINE>
 D
+
 >>> text_indentation("A.  B.  C.  D.")
 A.
 <BLANKLINE>
@@ -84,15 +125,7 @@ B.
 C.
 <BLANKLINE>
 D.
->>> text_indentation(123)
-Traceback (most recent call last):
-TypeError: text must be a string
->>> text_indentation(None)
-Traceback (most recent call last):
-TypeError: text must be a string
->>> text_indentation(["Hello."])
-Traceback (most recent call last):
-TypeError: text must be a string
+
 >>> text_indentation("   ")
 >>> text_indentation(".")
 .
