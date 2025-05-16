@@ -1,37 +1,28 @@
 #!/usr/bin/python3
 """
-This module provides a function to print a text with 2 new lines after
-each of these characters: ., ? and :.
+Function that prints a text with two new lines after '.', '?', and ':'.
 """
 
 
-def text_indentation(txt):
-    """
-    Prints a text with 2 new lines after each of these characters: ., ? and :
-
-    Args:
-        txt (str): The text to print.
-
-    Raises:
-        TypeError: If txt is not a string.
-    """
-    if type(txt) is not str:
+def text_indentation(text):
+    """Prints a text with two new lines after '.', '?', and ':'."""
+    if type(text) is not str:
         raise TypeError("text must be a string")
 
-    segment = ""
-    for char in txt:
-        if char in ('.', '?', ':'):
-            segment += char
-            print(segment.strip())
+    buffer = ""
+    for c in text:
+        if c in ('.', '?', ':'):
+            buffer += c
+            print(buffer.strip())
             print()
-            segment = ""
-        elif char == '\n':
-            if segment.strip():
-                print(segment.strip())
+            buffer = ""
+        elif c == '\n':
+            if buffer.strip():
+                print(buffer.strip())
             print()
-            segment = ""
+            buffer = ""
         else:
-            segment += char
+            buffer += c
 
-    if segment.strip():
-        print(segment.strip(), end="")
+    if buffer.strip():
+        print(buffer.strip(), end="")
