@@ -43,7 +43,7 @@
     - What is sequence unpacking
     - What is the del statement and how to use it
 
-## Project 5 :
+## Project 5 : Python - More Data Structures: Set, Dictionary
     - Why Python programming is awesome
     - What are sets and how to use them
     - What are the most common methods of set and how to use them
@@ -55,4 +55,23 @@
     - How to iterate over a dictionary
     - What is a lambda function
     - What are the map, reduce and filter functions
+
+## Project 6 : Python - Exceptions
+    - Why Python programming is awesome
+    - What’s the difference between errors and exceptions
+    - What are exceptions and how to use them
+    - When do we need to use exceptions
+    - How to correctly handle an exception
+    - What’s the purpose of catching exceptions
+    - How to raise a builtin exception
+    - When do we need to implement a clean-up action after an exception
+
+## Project 7 : 
+    - Why Python programming is awesome
+    - What’s an interactive test
+    - Why tests are important
+    - How to write Docstrings to create tests
+    - How to write documentation for each module and function
+    - What are the basic option flags to create tests
+    - How to find edge cases
 

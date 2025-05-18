@@ -9,7 +9,7 @@
         - You have to use 'try: / except:'
         - You are not allowed to import any module
         - You are not allowed to use 'len()'
-program [0-safe_print_list.py]()
+program [0-safe_print_list.py](https://github.com/Mylliah/holbertonschool-higher_level_programming/blob/main/python-exceptions/0-safe_print_list.py)
 
 ### Task 1 :
         Write a function that prints an integer with '"{:d}".format().'
@@ -22,7 +22,7 @@ program [0-safe_print_list.py]()
         - You have to use '"{:d}".format()' to print as integer
         - You are not allowed to import any module
         - You are not allowed to use 'type()'
-program [1-safe_print_integer.py]()
+program [1-safe_print_integer.py](https://github.com/Mylliah/holbertonschool-higher_level_programming/blob/main/python-exceptions/1-safe_print_integer.py)
 
 ### Task 2 :
         Write a function that prints the first x elements of a list and only integers.
@@ -36,7 +36,7 @@ program [1-safe_print_integer.py]()
         - You have to use '"{:d}".format()' to print an integer
         - You are not allowed to import any module
         - You are not allowed to use 'len()'
-program [2-safe_print_list_integers.py]()
+program [2-safe_print_list_integers.py](https://github.com/Mylliah/holbertonschool-higher_level_programming/blob/main/python-exceptions/2-safe_print_list_integers.py)
 
 ### Task 3 :
         Write a function that divides 2 integers and prints the result.
@@ -47,7 +47,7 @@ program [2-safe_print_list_integers.py]()
         - You have to use 'try: / except: / finally:'
         - You have to use '"{}".format()' to print the result
         - You are not allowed to import any module
-program [3-safe_print_division.py]()
+program [3-safe_print_division.py](https://github.com/Mylliah/holbertonschool-higher_level_programming/blob/main/python-exceptions/3-safe_print_division.py)
 
 ### Task 4 :
         Write a function that divides element by element 2 lists.
@@ -64,16 +64,16 @@ program [3-safe_print_division.py]()
             print: 'out of range'
         - You have to use 'try: / except: / finally:'
         - You are not allowed to import any module
-program [4-list_division.py]()
+program [4-list_division.py](https://github.com/Mylliah/holbertonschool-higher_level_programming/blob/main/python-exceptions/4-list_division.py)
 
 ### Task 5 :
         Write a function that raises a type exception.
         - Prototype: 'def raise_exception():'
         - You are not allowed to import any module
-program [5-raise_exception.py]()
+program [5-raise_exception.py](https://github.com/Mylliah/holbertonschool-higher_level_programming/blob/main/python-exceptions/5-raise_exception.py)
 
 ### Task 6 :
         Write a function that raises a name exception with a message.
         - Prototype: 'def raise_exception_msg(message=""):'
         - You are not allowed to import any module
-program [6-raise_exception_msg.py]()
+program [6-raise_exception_msg.py](https://github.com/Mylliah/holbertonschool-higher_level_programming/blob/main/python-exceptions/6-raise_exception_msg.py)
