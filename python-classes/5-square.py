@@ -47,7 +47,7 @@ class Square:
         Prints the square with the character '#' to the standard output
         If the size is 0, prints an empty line
         """
-        if self.__size < 0:
+        if self.__size == 0:
             print()
         else:
             for i in range(self.__size):
