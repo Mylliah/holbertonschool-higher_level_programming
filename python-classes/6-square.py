@@ -16,7 +16,7 @@ class Square:
             position (tuple): position must be a tuple of 2 positive integers
         """
         self.__size = size
-        self.__position = position
+        self.position = position
 
     def area(self):
         """
