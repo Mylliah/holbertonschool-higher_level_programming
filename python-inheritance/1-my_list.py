@@ -10,6 +10,7 @@ class MyList(list):
     MyList class that inherits from list.
     Provides a method to print the list in sorted order.
     """
+
     def print_sorted(self):
         """Prints the list, but sorted in ascending order."""
         sorted_list = []
