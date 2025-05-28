@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 
 """Module demonstrating duck typing and abstract base classes with shapes."""
 
@@ -25,7 +25,7 @@ class Circle(Shape):
 
     def __init__(self, radius):
         """Initialize a circle with a given radius."""
-        self.radius = radius
+        self.radius = abs(radius)
 
     def area(self):
         """Return the area of the circle."""
