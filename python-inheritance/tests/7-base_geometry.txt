@@ -1,16 +1,97 @@
 >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
 >>> bg = BaseGeometry()
->>> bg.integer_validator("my_int", 12)
->>> bg.integer_validator("width", 89)
->>> bg.integer_validator("name", "John")
+
+>>> bg.area()
 Traceback (most recent call last):
-    ...
-TypeError: name must be an integer
->>> bg.integer_validator("age", 0)
+Exception: area() is not implemented
+
+>>> bg.integer_validator("width", 8)
+>>> bg.integer_validator("height", 21)
+>>> bg.integer_validator("distance", 1234)
+
+>>> bg.integer_validator("population", 987654321)
+>>> bg.integer_validator("max_value", 2147483647)
+
+>>> bg.integer_validator()
 Traceback (most recent call last):
-    ...
-ValueError: age must be greater than 0
->>> bg.integer_validator("distance", -4)
+TypeError: BaseGeometry.integer_validator() missing 2 required positional arguments: 'name' and 'value'
+>>> bg.integer_validator("age")
 Traceback (most recent call last):
-    ...
+TypeError: BaseGeometry.integer_validator() missing 1 required positional argument: 'value'
+>>> bg.integer_validator("age", None)
+Traceback (most recent call last):
+TypeError: age must be an integer
+
+>>> bg.integer_validator("score", 0)
+Traceback (most recent call last):
+ValueError: score must be greater than 0
+
+>>> bg.integer_validator("distance", -100)
+Traceback (most recent call last):
 ValueError: distance must be greater than 0
+
+>>> bg.integer_validator("username", "Bob")
+Traceback (most recent call last):
+TypeError: username must be an integer
+
+>>> bg.integer_validator("average", 9.2)
+Traceback (most recent call last):
+TypeError: average must be an integer
+
+>>> bg.integer_validator("items", [1, 2])
+Traceback (most recent call last):
+TypeError: items must be an integer
+
+>>> bg.integer_validator("data", {"key": 2})
+Traceback (most recent call last):
+TypeError: data must be an integer
+
+>>> bg.integer_validator("pair", (3, 4))
+Traceback (most recent call last):
+TypeError: pair must be an integer
+
+>>> bg.integer_validator("boolean", True)
+Traceback (most recent call last):
+TypeError: boolean must be an integer
+
+>>> bg.integer_validator("empty_list", [])
+Traceback (most recent call last):
+TypeError: empty_list must be an integer
+
+>>> bg.integer_validator("empty_tuple", ())
+Traceback (most recent call last):
+TypeError: empty_tuple must be an integer
+
+>>> bg.integer_validator("set_type", {1, 2})
+Traceback (most recent call last):
+TypeError: set_type must be an integer
+
+>>> bg.integer_validator("self", bg)
+Traceback (most recent call last):
+TypeError: self must be an integer
+
+>>> bg.integer_validator("float_zero", 0.0)
+Traceback (most recent call last):
+TypeError: float_zero must be an integer
+
+>>> bg.integer_validator("false_value", False)
+Traceback (most recent call last):
+TypeError: false_value must be an integer
+
+>>> import math
+>>> bg.integer_validator("infinity", float('inf'))
+Traceback (most recent call last):
+TypeError: infinity must be an integer
+
+>>> bg.integer_validator("nan", float('nan'))
+Traceback (most recent call last):
+TypeError: nan must be an integer
+
+>>> bg.integer_validator("complex_number", complex(5, 2))
+Traceback (most recent call last):
+TypeError: complex_number must be an integer
+
+>>> bg.integer_validator("length", 12)
+>>> bg.integer_validator("width", 24)
+>>> bg.integer_validator("area", 288)
