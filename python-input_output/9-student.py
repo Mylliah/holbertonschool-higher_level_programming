@@ -2,6 +2,7 @@
 
 """Defines the Student class."""
 
+
 class Student:
     """Represents a student."""
     def __init__(self, first_name, last_name, age):
