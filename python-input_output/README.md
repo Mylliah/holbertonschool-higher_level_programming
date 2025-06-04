@@ -110,7 +110,7 @@ program [10-student.py](https://github.com/Mylliah/holbertonschool-higher_level_
                 - You can assume `json` will always be a dictionary
                 - A dictionary key will be the public attribute name
                 - A dictionary value will be the value of the public attribute
-program [11-student.py] (https://github.com/Mylliah/holbertonschool-higher_level_programming/blob/main/python-input_output/11-student.py)
+program [11-student.py](https://github.com/Mylliah/holbertonschool-higher_level_programming/blob/main/python-input_output/11-student.py)
 
 
 ### Task 12 :
