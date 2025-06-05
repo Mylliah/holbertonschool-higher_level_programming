@@ -66,7 +66,7 @@
     - How to raise a builtin exception
     - When do we need to implement a clean-up action after an exception
 
-## Project 7 : 
+## Project 7 : Python - Test-driven development
     - Why Python programming is awesome
     - What’s an interactive test
     - Why tests are important
@@ -74,4 +74,98 @@
     - How to write documentation for each module and function
     - What are the basic option flags to create tests
     - How to find edge cases
+
+## Project 8 : Python - Classes and Objects
+    - What is OOP
+    - “first-class everything”
+    - What is a class
+    - What is an object and an instance
+    - What is the difference between a class and an object or instance
+    - What is an attribute
+    - What are and how to use public, protected and private attributes
+    - What is self
+    - What is a method
+    - What is the special __init__ method and how to use it
+    - What is Data Abstraction, Data Encapsulation, and Information Hiding
+    - What is a property
+    - What is the difference between an attribute and a property in Python
+    - What is the Pythonic way to write getters and setters in Python
+    - How to dynamically create arbitrary new attributes for existing instances of a class
+    - How to bind attributes to object and classes
+    - What is the __dict__ of a class and/or instance of a class and what does it contain
+    - How does Python find the attributes of an object or class
+    - How to use the getattr function
+
+## Project 9 : Python - More Classes and Objects
+    - Why Python programming is awesome
+    - What is OOP
+    - “first-class everything”
+    - What is a class
+    - What is an object and an instance
+    - What is the difference between a class and an object or instance
+    - What is an attribute
+    - What are and how to use public, protected and private attributes
+    - What is self
+    - What is a method
+    - What is the special __init__ method and how to use it
+    - What is Data Abstraction, Data Encapsulation, and Information Hiding
+    - What is a property
+    - What is the difference between an attribute and a property in Python
+    - What is the Pythonic way to write getters and setters in Python
+    - What are the special __str__ and __repr__ methods and how to use them
+    - What is the difference between __str__ and __repr__
+    - What is a class attribute
+    - What is the difference between a object attribute and a class attribute
+    - What is a class method
+    - What is a static method
+    - How to dynamically create arbitrary new attributes for existing instances of a class
+    - How to bind attributes to object and classes
+    - What is and what does contain __dict__ of a class and of an instance of a class
+    - How does Python find the attributes of an object or class
+    - How to use the getattr function
+
+## Project 10 : Python - Inheritance
+    - What is a superclass, baseclass or parentclass
+    - What is a subclass
+    - How to list all attributes and methods of a class or instance
+    - When can an instance have new attributes
+    - How to inherit class from another
+    - How to define a class with multiple base classes
+    - What is the default class every class inherit from
+    - How to override a method or attribute inherited from the base class
+    - Which attributes or methods are available by heritage to subclasses
+    - What is the purpose of inheritance
+    - What are, when and how to use isinstance, issubclass, type and super built-in functions
+
+## Project 11 : Python - Abstract Classes and Interfaces
+    - Abstract Classes: Understand and apply abstract classes to define common interfaces while enforcing certain levels of class completeness.
+    - Interfaces and Duck Typing: Grasp the concept of interfaces and duck typing to ensure that objects adhere to a specific contract or protocol.
+    - Subclassing Standard Base Classes: Learn to extend standard base classes like lists, dictionaries, and iterators to create custom data structures with specialized behavior.
+    - Method Overriding: Employ method overriding to alter or enhance the behavior of base class methods.
+    - Multiple Inheritance: Understand and apply multiple inheritance to form complex relationships between classes.
+    - Mixins: Utilize mixins to compose behavior across unrelated classes.
+
+## Project 12 : Python - Input/Output
+    - Why Python programming is awesome
+    - How to open a file
+    - How to write text in a file
+    - How to read the full content of a file
+    - How to read a file line by line
+    - How to move the cursor in a file
+    - How to make sure a file is closed after using it
+    - What is and how to use the with statement
+    - What is JSON
+    - What is serialization
+    - What is deserialization
+    - How to convert a Python data structure to a JSON string
+    - How to convert a JSON string to a Python data structure
+    - How to access command line parameters in a Python script
+
+## Project 13 : Python - Serialization
+    - What is Marshaling
+    - What is Serialization
+    - Articulate the differences and similarities between marshaling and serialization.
+    - Implement serialization in a practical programming task.
+    - Understand how serialized data can be used in web applications, databases, and network communications.
+    - Evaluate the performance implications of different serialization formats, like JSON, XML, and binary formats.
 
