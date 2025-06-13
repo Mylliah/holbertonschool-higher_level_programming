@@ -2,9 +2,7 @@
 
 from flask import Flask, jsonify, request
 from flask_httpauth import HTTPBasicAuth
-from flask_jwt_extended import (
-    JWTManager, create_access_token, jwt_required, get_jwt_identity
-)
+from flask_jwt_extended import JWTManager, create_access_token, jwt_required, get_jwt()
 from werkzeug.security import generate_password_hash, check_password_hash
 
 app = Flask(__name__)
@@ -71,10 +69,10 @@ def login():
     if not user or not check_password_hash(user['password'], password):
         return jsonify({"error": "Invalid credentials"}), 401
 
-    access_token = create_access_token(identity={
-        'username': username,
-        'role': user['role']
-    })
+    access_token = create_access_token(
+        identity=username,
+        additional_claims={'role': user['role']}
+    )
     return jsonify(access_token=access_token)
 
 
@@ -89,8 +87,8 @@ def admin_required(fn):
     """Decorator to restrict access to admin users only."""
     @jwt_required()
     def wrapper(*args, **kwargs):
-        current_user = get_jwt_identity()
-        if current_user['role'] != 'admin':
+        claims = get_jwt()
+        if claims.get('role') != 'admin':
             return jsonify({"error": "Admin access required"}), 401
         return fn(*args, **kwargs)
     return wrapper
