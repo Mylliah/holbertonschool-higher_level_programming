@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 """
 Lists all cities from the database hbtn_0e_4_usa,
 including their state names, sorted by cities.id ASC.
@@ -7,11 +7,7 @@ including their state names, sorted by cities.id ASC.
 import MySQLdb
 import sys
 
-
-def list_cities_by_state():
-    """
-    Connects to the database and prints all cities with their state names.
-    """
+if __name__ == "__main__":
     username = sys.argv[1]
     password = sys.argv[2]
     database = sys.argv[3]
@@ -40,7 +36,3 @@ def list_cities_by_state():
 
     cur.close()
     db.close()
-
-
-if __name__ == "__main__":
-    list_cities_by_state()

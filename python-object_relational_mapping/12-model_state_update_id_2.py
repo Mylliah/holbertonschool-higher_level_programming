@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 """Updates the name of the State where id = 2 to 'New Mexico'."""
 
 import sys

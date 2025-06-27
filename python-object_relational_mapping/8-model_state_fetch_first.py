@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 """
 Script that prints the first State object from the database hbtn_0e_6_usa
 """
@@ -8,11 +8,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from model_state import Base, State
 
-
-def fetch_first_state():
-    """
-    Connects to MySQL and fetches the first State object by ID
-    """
+if __name__ == "__main__":
     username, password, dbname = sys.argv[1:4]
     db_url = f"mysql+mysqldb://{username}:{password}@localhost:3306/{dbname}"
 
@@ -28,7 +24,3 @@ def fetch_first_state():
         print("Nothing")
 
     session.close()
-
-
-if __name__ == "__main__":
-    fetch_first_state()

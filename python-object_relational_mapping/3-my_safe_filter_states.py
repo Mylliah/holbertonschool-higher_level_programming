@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 """
 Safely lists all states from the database hbtn_0e_0_usa
 that match a given name (avoids SQL injection).
@@ -7,12 +7,7 @@ that match a given name (avoids SQL injection).
 import MySQLdb
 import sys
 
-
-def safe_search_state():
-    """
-    Connects to the database and prints matching states by name
-    (exact match, safe from SQL injection).
-    """
+if __name__ == "__main__":
     username = sys.argv[1]
     password = sys.argv[2]
     database = sys.argv[3]
@@ -38,7 +33,3 @@ def safe_search_state():
 
     cur.close()
     db.close()
-
-
-if __name__ == "__main__":
-    safe_search_state()

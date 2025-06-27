@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 """
 Displays all values in the 'states' table of hbtn_0e_0_usa
 where name matches the argument exactly (case-sensitive).
@@ -8,11 +8,7 @@ Uses MySQLdb and unsafe string formatting (intentional for the task).
 import MySQLdb
 import sys
 
-
-def search_state_by_name():
-    """
-    Connects to the database and prints matching states by name (exact match).
-    """
+if __name__ == "__main__":
     username = sys.argv[1]
     password = sys.argv[2]
     database = sys.argv[3]
@@ -40,7 +36,3 @@ def search_state_by_name():
 
     cur.close()
     db.close()
-
-
-if __name__ == "__main__":
-    search_state_by_name()

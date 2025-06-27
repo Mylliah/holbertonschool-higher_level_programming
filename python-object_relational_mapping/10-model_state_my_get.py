@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 """Prints the State object with the name passed as argument from the DB."""
 
 import sys

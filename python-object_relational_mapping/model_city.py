@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 """Defines the City class that links to the MySQL table `cities`."""
 
 from sqlalchemy import Column, Integer, String, ForeignKey

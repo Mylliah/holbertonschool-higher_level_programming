@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 """
 Lists all cities of a given state from the database hbtn_0e_4_usa,
 safe from SQL injection.
@@ -7,12 +7,7 @@ safe from SQL injection.
 import MySQLdb
 import sys
 
-
-def list_cities_of_state():
-    """
-    Connects to the DB and lists all cities of the state given in argument.
-    Results are displayed as a single comma-separated line.
-    """
+if __name__ == "__main__":
     username = sys.argv[1]
     password = sys.argv[2]
     database = sys.argv[3]
@@ -43,7 +38,3 @@ def list_cities_of_state():
 
     cur.close()
     db.close()
-
-
-if __name__ == "__main__":
-    list_cities_of_state()
