@@ -169,3 +169,48 @@
     - Understand how serialized data can be used in web applications, databases, and network communications.
     - Evaluate the performance implications of different serialization formats, like JSON, XML, and binary formats.
 
+## Project 14 : RESTful API
+    RESTful API Project – Overview
+    This project explores the fundamentals and implementation of RESTful APIs, which are essential for efficient and scalable communication between software systems. It covers both the consumption and development of APIs using tools like the command line, Python, and Flask, and emphasizes the importance of security, authentication, and documentation.
+
+    Key Learning Objectives
+    - HTTP/HTTPS Basics: Understand how web data transfer works and the differences between secure and non-secure communication.
+    - API Consumption: Practice interacting with APIs using the command line and Python scripts.
+    - API Development:
+        - With http.server: Create simple APIs using Python's built-in modules.
+        - With Flask: Build scalable APIs with routing and data handling.
+    - Security & Authentication: Learn how to protect APIs and restrict access to authorized users.
+    - Documentation with OpenAPI: Ensure APIs are well-documented, standardized, and easy to use.
+
+    Why It Matters
+    RESTful APIs are at the heart of modern web integration—connecting apps, services, and databases across platforms. From automating industrial systems to enabling social media features, APIs act as the bridge between different technologies. Mastering their use is key to becoming a well-rounded developer.
+
+## Project 15 : SQL - Introduction
+    - What’s a database
+    - What’s a relational database
+    - What does SQL stand for
+    - What’s MySQL
+    - How to create a database in MySQL
+    - What does DDL and DML stand for
+    - How to CREATE or ALTER a table
+    - How to SELECT data from a table
+    - How to INSERT, UPDATE or DELETE data
+    - What are subqueries
+    - How to use MySQL functions
+
+## Project 16 : 
+    - How to create a new MySQL user
+    - How to manage privileges for a user to a database or table
+    - What’s a PRIMARY KEY
+    - What’s a FOREIGN KEY
+    - How to use NOT NULL and UNIQUE constraints
+    - How to retrieve datas from multiple tables in one request
+    - What are subqueries
+    - What are JOIN and UNION
+
+## Project 17 :
+    - How to connect to a MySQL database from a Python script
+    - How to SELECT rows in a MySQL table from a Python script
+    - How to INSERT rows in a MySQL table from a Python script
+    - What ORM means
+    - How to map a Python Class to a MySQL table
