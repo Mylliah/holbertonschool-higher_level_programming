@@ -198,7 +198,7 @@
     - What are subqueries
     - How to use MySQL functions
 
-## Project 16 : 
+## Project 16 : SQL - More queries
     - How to create a new MySQL user
     - How to manage privileges for a user to a database or table
     - What’s a PRIMARY KEY
@@ -208,9 +208,11 @@
     - What are subqueries
     - What are JOIN and UNION
 
-## Project 17 :
+## Project 17 : Python - Object-relational mapping
     - How to connect to a MySQL database from a Python script
     - How to SELECT rows in a MySQL table from a Python script
     - How to INSERT rows in a MySQL table from a Python script
     - What ORM means
     - How to map a Python Class to a MySQL table
+
+
