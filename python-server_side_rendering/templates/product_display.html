@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="end">
+<html lang="en">
     <head>
         <title>Product Display</title>
     </head>
@@ -7,13 +7,13 @@
         <h1>Product List</h1>
 
         {% if error %}
-            <p>{{ error }}
+            <p>{{ error }}</p>
         {% elif products %}
             <table border="1">
                 <tr>
                     <th>Name</th>
                     <th>Category</th>
-                    <th></th>Price</th>
+                    <th>Price</th>
                 </tr>
                 {% for product in products %}
                     <tr>

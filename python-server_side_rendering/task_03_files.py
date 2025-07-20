@@ -10,7 +10,7 @@ app = Flask(__name__)
 
 def json_conv():
     try:
-        with open('products.json', 'r', encoding='itf-8') as f:
+        with open('products.json', 'r', encoding='utf-8') as f:
             return json.load(f)
     except Exception:
         return []
@@ -44,14 +44,14 @@ def products():
     elif source == 'csv':
         data = csv_conv()
     else:
-        return render_template('product_dispay.html', error="Wrong source")
+        return render_template('product_display.html', error="Wrong source")
 
     if product_id:
         try:
             product_id = int(product_id)
         except ValueError:
             return render_template('product_display.html',
-                                   error="Invalid I format")
+                                   error="Invalid ID format")
         for product in data:
             if product.get("id") == product_id:
                 return render_template('product_display.html',
