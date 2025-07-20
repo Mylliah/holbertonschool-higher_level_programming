@@ -11,12 +11,9 @@ app = Flask(__name__)
 def json_conv():
     try:
         with open('products.json', 'r', encoding='itf-8') as f:
-            data = json.load(f)
-            products_list = data.get('products', [])
-    except (FileNotFoundError, json.JSONDecodeError) as e:
-        products_list = []
-
-    return render_template('product_display.html', products=products_list)
+            return json.load(f)
+    except Exception:
+        return []
 
 
 def csv_conv():
