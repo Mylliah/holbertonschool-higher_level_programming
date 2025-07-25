@@ -7,5 +7,5 @@ fetch(apiUrl)
   .then(response => response.json())
   .then(data => {
     const characterName = data.name;
-    characterElement.textContent = characterName;
+    characterElement.textContent = `name : ${characterName}`;
   });
